@@ -38,12 +38,12 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "300")) # auto delete in seconds
 
 #start message
-START_PIC = os.environ.get("START_PIC", "https://telegra.ph/file/ec17880d61180d3312d6a.jpg")
-FORCE_PIC = os.environ.get("FORCE_PIC", "https://telegra.ph/file/e292b12890b8b4b9dcbd1.jpg")
+START_PIC = os.environ.get("START_PIC", "https://envs.sh/pme.jpg")
+FORCE_PIC = os.environ.get("FORCE_PIC", "https://envs.sh/pme.jpg")
 
 HELP_TXT = "<b>If you can't use me or don't get any files, it's mean you don't join either <a href=https://t.me/STK_Animes>STK Animes</a> or <a href=https://t.me/AIO_Backup>AIO Backup</a>. First Join These Channels Then retry.</b>"
 ABOUT_TXT = "<b>• Creator: <a href=https://t.me/Soutick_09>Soutick</a>\n• Main Channel: <a href=https://t.me/STK_Animes>STK Animes</a>\n• Best Friend: <a href=tg://settings>This Person</a></b>"
-START_MSG = os.environ.get("START_MESSAGE", "<b>Hello!! {first} 👋! I'm Zenitsu.\n\nI'm here to provide you anime contents for Free 😄\n\n© @STK_Animes</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>Hello!! {mention} 👋! I'm Zenitsu.\n\nI'm here to provide you anime contents for Free 😄\n\n© @STK_Animes</b>")
 try:
     ADMINS=[6376328008]
     for x in (os.environ.get("ADMINS", "5413708222").split()):
