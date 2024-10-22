@@ -91,11 +91,14 @@ async def start_command(client: Client, message: Message):
     else:
         reply_markup = InlineKeyboardMarkup(
             [
-                [
-                    InlineKeyboardButton('⚡️ ᴍᴏᴠɪᴇs', url='https://t.me/+QVewP06XCPFiYWZl'),
-                    InlineKeyboardButton('🍁 sᴇʀɪᴇs', url='https://t.me/webseries_flix')
+                    [
+                        InlineKeyboardButton("🔥 Join Main Channel", url = "https://t.me/STK_Animes"),
+                    ],
+                    [
+                    InlineKeyboardButton("😍 About", callback_data = "about"),
+                    InlineKeyboardButton('🔒 Close', callback_data ='close')
+                    ]
                 ]
-            ]
         )
         await message.reply_text(
             text=START_MSG.format(
@@ -182,13 +185,13 @@ async def send_text(client: Bot, message: Message):
                 pass
             total += 1
         
-        status = f"""<b><u>Broadcast Completed</u></b>
+        status = f"""<b><u>🚀 Broadcast Completed</u></b>
 
-<b>Total Users :</b> <code>{total}</code>
-<b>Successful :</b> <code>{successful}</code>
-<b>Blocked Users :</b> <code>{blocked}</code>
-<b>Deleted Accounts :</b> <code>{deleted}</code>
-<b>Unsuccessful :</b> <code>{unsuccessful}</code>"""
+<b>😍 Total Users :</b> <code>{total}</code>
+<b>😁 Successful :</b> <code>{successful}</code>
+<b>😒 Blocked Users :</b> <code>{blocked}</code>
+<b>😢 Deleted Accounts :</b> <code>{deleted}</code>
+<b>😔 Unsuccessful :</b> <code>{unsuccessful}</code>"""
         
         return await pls_wait.edit(status)
 
@@ -221,4 +224,4 @@ async def delete_files(messages, client, k):
         keyboard = None
 
     # Edit message with the button
-    await k.edit_text("<b><i>Your Video / File Is Successfully Deleted ✅</i></b>", reply_markup=keyboard)
+    await k.edit_text("<b><i>Your Anime File Is Successfully Deleted 😓</i></b>", reply_markup=keyboard)
