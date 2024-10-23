@@ -5,7 +5,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7757618177:AAHt2JmtstgjU7f1xgTML9xKZ3OnXQlOOYA")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7968053738:AAEE3403KTxBvHPTIt26Na3NCN2LffCsqB0")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "28450765"))
@@ -14,7 +14,7 @@ APP_ID = int(os.environ.get("APP_ID", "28450765"))
 API_HASH = os.environ.get("API_HASH", "36f00f11f9d5c65e69b81fd804453a93")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002285065791"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002434201837"))
 
 # NAMA OWNER
 OWNER = os.environ.get("OWNER", "sewxiy")
@@ -26,12 +26,12 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "5827289728"))
 PORT = os.environ.get("PORT", "8030")
 
 #Database
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://SOUT:SOUT@cluster0.022gv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://FileSout:FileSout@cluster0.2d5js.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002092034053"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002118318196"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002118318196"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002155454477"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -41,9 +41,9 @@ FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "300")) # auto delete in se
 START_PIC = os.environ.get("START_PIC", "https://envs.sh/pme.jpg")
 FORCE_PIC = os.environ.get("FORCE_PIC", "https://envs.sh/pme.jpg")
 
-HELP_TXT = "<b>If you can't use me or don't get any files, it's mean you don't join either <a href=https://t.me/STK_Animes>STK Animes</a> or <a href=https://t.me/AIO_Backup>AIO Backup</a>. First Join These Channels Then retry.</b>"
-ABOUT_TXT = "<b>• Creator: <a href=https://t.me/Soutick_09>Soutick</a>\n• Main Channel: <a href=https://t.me/STK_Animes>STK Animes</a>\n• Best Friend: <a href=tg://settings>This Person</a></b>"
-START_MSG = os.environ.get("START_MESSAGE", "<b>Hello!! {mention} 👋! I'm Zenitsu.\n\nI'm here to provide you anime contents for Free 😄\n\n© @STK_Animes</b>")
+HELP_TXT = "<b>If you can't use me or don't get any files, it's mean you don't join either <a href=https://t.me/+LGPS4EDPWLA2YTM1>AIO J*v</a> or <a href=https://t.me/AIO_Backup>AIO Backup</a>. First Join These Channels Then retry.</b>"
+ABOUT_TXT = "<b>• Creator: <a href=https://t.me/Soutick_09>Soutick</a>\n• Backup Channel: <a href=https://t.me/AIO_Backup>AIO Backup 🔞</a>\n• Best Friend: <a href=tg://settings>This Person</a></b>"
+START_MSG = os.environ.get("START_MESSAGE", "<b>Hello!! {mention} 👋! I'm Alya.\n\nI'm here to provide you adult contents for Free 😄\n\n© @AIO_Backup</b>")
 try:
     ADMINS=[6376328008]
     for x in (os.environ.get("ADMINS", "5413708222").split()):
