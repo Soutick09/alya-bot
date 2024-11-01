@@ -5,7 +5,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7968053738:AAE8P644XoZcw4qONLeZHa5svhv_amlsH-U")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7968053738:AAFjaEypa5wEUWZ_mN0JRhdMSlquq1waa7M")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "28450765"))
@@ -14,7 +14,7 @@ APP_ID = int(os.environ.get("APP_ID", "28450765"))
 API_HASH = os.environ.get("API_HASH", "36f00f11f9d5c65e69b81fd804453a93")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002434201837"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002314807164"))
 
 # NAMA OWNER
 OWNER = os.environ.get("OWNER", "sewxiy")
@@ -30,12 +30,12 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://FileSout:FileSout@cluster
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002118318196"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002155454477"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002470658194"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002423799507"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
-FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "90")) # auto delete in seconds
+FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "120")) # auto delete in seconds
 
 #start message
 
@@ -44,7 +44,7 @@ ABOUT_TXT = "<b>• Creator: <a href=https://t.me/Soutick_09>Soutick</a>\n• Ba
 START_MSG = os.environ.get("START_MESSAGE", "<b>Hello!! {mention} 👋! I'm Alya.\n\nI'm here to provide you adult contents for Free 😄\n\n© @AIO_Backup</b>")
 try:
     ADMINS=[6376328008]
-    for x in (os.environ.get("ADMINS", "5413708222").split()):
+    for x in (os.environ.get("ADMINS", "5413708222 7272399911").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
