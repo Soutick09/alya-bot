@@ -5,7 +5,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7968053738:AAH_i6DaVERhp8Og_tQk9J_BB878uib3PaY")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7968053738:AAEIKNDxn7Q78wdd-Cuvmyv61CIWydPx5r4")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "28450765"))
@@ -35,7 +35,7 @@ FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002423799507"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
-FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "120")) # auto delete in seconds
+FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "300")) # auto delete in seconds
 
 #start message
 
